@@ -4,33 +4,63 @@
     padding: 0px;
     margin: 0px;
     font-family: "inter";
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+h2 {
+    font-size: 72px;
 }
 
 #nav-box {
     display: flex;
     justify-content: center;
+    background-color: #30e3ca;
 }
 
 nav {
     display: flex;
+    line-height: 40px;
     justify-content: center;
-    background-color: red;
-    border-radius: 8px;
-    width: 500px;
+    height: 45px;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 80px;
+    text-align: center;
+}
+
+nav ul a {
     text-decoration: none;
+    color: #114b5f;
 }
 
-.caixa-areas {
-    display: flex;
+#pres-box {
+    color: white;
+    background-image: url("../images/teste.jpg");
+    background-size: cover;
+    height: 500px;
+    padding-top: 50px;
 }
 
-.conteudo-areas {
+#pres-box h2 {
+}
+
+#pres-box p {
+}
+
+.content-areas {
     margin: 10px;
     width: 300px;
     height: 300px;
-    background-color: red;
+    background-color: #028090;
+    float: left;
 }
