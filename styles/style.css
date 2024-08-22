@@ -6,18 +6,26 @@
     font-family: "inter";
 }
 
-nav {
+#nav-box {
     display: flex;
     justify-content: center;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border-radius: 8px;
+    width: 500px;
+}
+
 nav ul {
     display: flex;
+    text-decoration: none;
 }
 
 .caixa-areas {
     display: flex;
-    flex-direction: row;
 }
 
 .conteudo-areas {
