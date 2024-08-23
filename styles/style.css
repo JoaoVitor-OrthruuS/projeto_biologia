@@ -4,11 +4,14 @@
     padding: 0px;
     margin: 0px;
     font-family: "inter";
-    box-sizing: border-box;
 }
 
 body {
-    background: #ffffff;
+    background-image: url("../images/teste.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -17,15 +20,27 @@ h2 {
 
 #nav-box {
     display: flex;
-    justify-content: center;
-    background-color: #30e3ca;
+    justify-content: space;
+}
+
+#logo {
+    line-height: 40px;
+    width: 50%;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo img {
+    width: 30px;
 }
 
 nav {
     display: flex;
-    line-height: 40px;
-    justify-content: center;
-    height: 45px;
+    justify-content: right;
+    width: 50%;
 }
 
 nav ul {
@@ -34,27 +49,23 @@ nav ul {
 }
 
 nav ul li {
-    width: 80px;
+    width: 90px;
     text-align: center;
 }
 
 nav ul a {
     text-decoration: none;
-    color: #114b5f;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 #pres-box {
     color: white;
-    background-image: url("../images/teste.jpg");
     background-size: cover;
-    height: 500px;
+    height: 40vh;
+    width: 40%;
     padding-top: 50px;
-}
-
-#pres-box h2 {
-}
-
-#pres-box p {
 }
 
 .content-areas {
