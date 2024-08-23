@@ -10,12 +10,11 @@ body {
     background-image: url("../images/teste.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: auto;
 }
 
 h2 {
     font-size: 72px;
+    color: white;
 }
 
 #nav-box {
@@ -23,18 +22,14 @@ h2 {
     justify-content: space;
 }
 
-#logo {
-    line-height: 40px;
+#logo-box {
+    display: flex;
     width: 50%;
 }
 
-#logo a {
-    text-decoration: none;
-    color: white;
-}
-
-#logo img {
-    width: 30px;
+#logo-box a img {
+    width: 10%;
+    filter: invert(100%);
 }
 
 nav {
@@ -51,6 +46,7 @@ nav ul {
 nav ul li {
     width: 90px;
     text-align: center;
+    line-height: 40px;
 }
 
 nav ul a {
@@ -62,16 +58,49 @@ nav ul a {
 
 #pres-box {
     color: white;
-    background-size: cover;
-    height: 40vh;
     width: 40%;
-    padding-top: 50px;
+}
+
+#content-box {
+}
+
+#card-1 {
+    background-image: url("../images/bio-marinha.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+}
+
+#card-2 {
+    background-image: url("../images/Bio-Paleo.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+}
+
+#card-3 {
+    background-image: url("../images/bio-botanica.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+}
+
+#card-4 {
+    background-image: url("../images/bio-botanica.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 20%;
 }
 
 .content-areas {
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: #028090;
+    height: 400px;
+    display: flex;
     float: left;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.title-box {
+    color: white;
+    font-weight: bold;
 }
