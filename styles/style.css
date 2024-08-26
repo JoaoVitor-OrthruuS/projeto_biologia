@@ -4,38 +4,39 @@
     padding: 0px;
     margin: 0px;
     font-family: "inter";
-}
-
-body {
-    background-image: url("../images/teste.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-h2 {
-    font-size: 72px;
     color: white;
 }
 
-#nav-box {
-    display: flex;
-    justify-content: space;
+/*Imagem de fundo*/
+
+body {
+    background-image: url("../images/teste.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#logo-box {
+/*Configuração do header, logo e menu de navegação*/
+
+header {
     display: flex;
-    width: 50%;
+    justify-content: space-between;
+    padding: 0px 15px;
 }
 
-#logo-box a img {
-    width: 10%;
+a {
+    text-decoration: none;
+}
+
+#logo img {
+    width: 40px;
     filter: invert(100%);
+    margin-top: 8px;
 }
 
-nav {
+header nav {
     display: flex;
-    justify-content: right;
-    width: 50%;
+    align-items: center;
 }
 
 nav ul {
@@ -43,64 +44,44 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    width: 90px;
-    text-align: center;
-    line-height: 40px;
+/*Decoração botão nav*/
+.btn-nav {
+    padding: 0px 8px;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    line-height: 30px;
+.btn-nav:hover {
+    text-decoration: underline lightgreen 5px;
 }
 
-#pres-box {
-    color: white;
-    width: 40%;
-}
+/*Menu das áreas da biologia*/
 
-#content-box {
-}
-
-#card-1 {
-    background-image: url("../images/bio-marinha.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 20%;
-}
-
-#card-2 {
-    background-image: url("../images/Bio-Paleo.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 20%;
-}
-
-#card-3 {
-    background-image: url("../images/bio-botanica.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 20%;
-}
-
-#card-4 {
-    background-image: url("../images/bio-botanica.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 20%;
-}
-
-.content-areas {
-    height: 400px;
+#nav-slides {
     display: flex;
-    float: left;
-    border-radius: 15px;
-    margin: 15px;
+    flex-direction: row;
 }
 
-.title-box {
-    color: white;
-    font-weight: bold;
+.slides {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+#slide-1 {
+    background-image: url(../images/bio-marinha.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slide-2 {
+    background-image: url(../images/Bio-Paleo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slide-3 {
+    background-image: url(../images/bio-botanica.jpg);
+    background-position: center;
+    background-size: cover;
 }
