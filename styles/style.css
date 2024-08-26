@@ -14,6 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 /*Configuração do header, logo e menu de navegação*/
@@ -47,10 +48,26 @@ nav ul {
 /*Decoração botão nav*/
 .btn-nav {
     padding: 0px 8px;
+    font-weight: bold;
 }
 
 .btn-nav:hover {
     text-decoration: underline lightgreen 5px;
+}
+
+/*Área principal*/
+
+main {
+    padding: 15px;
+}
+
+article {
+    height: 40vh;
+    width: 40vw;
+}
+
+p {
+    padding-top: 15px;
 }
 
 /*Menu das áreas da biologia*/
@@ -61,13 +78,15 @@ nav ul {
 }
 
 .slides {
-    width: 300px;
+    margin: 15px;
+    width: 200px;
     height: 300px;
     background-color: red;
     border-radius: 15px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
     flex-direction: column-reverse;
     display: flex;
+    font-weight: bold;
 }
 
 #slide-1 {
