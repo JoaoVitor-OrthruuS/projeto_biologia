@@ -62,8 +62,8 @@ main {
 }
 
 article {
+    width: 60vw;
     height: 40vh;
-    width: 40vw;
 }
 
 p {
@@ -75,6 +75,16 @@ p {
 #nav-slides {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+hr {
+    background-color: white;
+    box-sizing: border-box;
+    width: 30%;
+    height: 1%;
+    border-radius: 15px;
 }
 
 .slides {
@@ -83,10 +93,17 @@ p {
     height: 300px;
     background-color: red;
     border-radius: 15px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.8);
     flex-direction: column-reverse;
     display: flex;
     font-weight: bold;
+    padding: 2%;
+}
+
+.slides:hover {
+    width: 300px;
+    height: 400px;
+    transition: ease-in-out 200ms;
 }
 
 #slide-1 {
@@ -101,6 +118,36 @@ p {
 }
 #slide-3 {
     background-image: url(../images/bio-botanica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide-4 {
+    background-image: url(../images/bio-anatomia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide-5 {
+    background-image: url(../images/bio-celular.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide-6 {
+    background-image: url(../images/bio-evo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide-7 {
+    background-image: url(../images/bio-genetica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide-8 {
+    background-image: url(../images/biologia-forense.jpg);
     background-position: center;
     background-size: cover;
 }
